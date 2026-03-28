@@ -275,9 +275,9 @@ function renderGrid(categoryId) {
         
         card.addEventListener('click', () => {
             triggerVibration(CONFIG.vibLow);
-            addToSentence(item.message, item.icon);
-            // Optionally, we could speak individual words as they are tapped to help with word finding
-            speak(item.message); 
+            // Usamos item.text para construir la frase correctamente sin duplicar verbos
+            addToSentence(item.text, item.icon);
+            speak(item.text); 
         });
         
         DOM.gridContainer.appendChild(card);
