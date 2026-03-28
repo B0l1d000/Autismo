@@ -10,88 +10,131 @@ const categories = {
             { icon: '👍', text: 'QUIERO', message: 'QUIERO' },
             { icon: '👎', text: 'NO QUIERO', message: 'NO QUIERO' },
             { icon: '➕', text: 'MÁS', message: 'MÁS' },
-            { icon: '🛑', text: 'FIN', message: 'YA ESTÁ' },
+            { icon: '🛑', text: 'FIN', message: 'FIN' },
             { icon: '✅', text: 'SÍ', message: 'SÍ' },
             { icon: '❌', text: 'NO', message: 'NO' },
             { icon: '🤝', text: 'AYUDA', message: 'AYUDA' },
-            { icon: '❓', text: 'QUÉ', message: 'QUÉ' }
+            { icon: '❓', text: 'QUÉ', message: 'QUÉ' },
+            { icon: '📍', text: 'DÓNDE', message: 'DÓNDE' },
+            { icon: '👤', text: 'QUIÉN', message: 'QUIÉN' },
+            { icon: '🏃', text: 'VAMOS', message: 'VAMOS' },
+            { icon: '😋', text: 'GUSTA', message: 'GUSTA' },
+            { icon: '🤢', text: 'NO GUSTA', message: 'NO GUSTA' }
         ]
     },
     basicos: {
         id: 'basicos', name: 'Básicos', icon: '💧', class: 'cat-basicos',
         items: [
-            { icon: '💧', text: 'AGUA', message: 'QUIERO AGUA' },
-            { icon: '🍽️', text: 'COMER', message: 'TENGO HAMBRE' },
-            { icon: '🚽', text: 'BAÑO', message: 'QUIERO IR AL BAÑO' },
-            { icon: '🚿', text: 'DUCHA', message: 'QUIERO DUCHARME' },
-            { icon: '😴', text: 'DORMIR', message: 'QUIERO DORMIR' },
-            { icon: '👕', text: 'VESTIR', message: 'QUIERO VESTIRME' }
+            { icon: '💧', text: 'AGUA', message: 'AGUA' },
+            { icon: '🍽️', text: 'COMER', message: 'COMER' },
+            { icon: '🚽', text: 'BAÑO', message: 'BAÑO' },
+            { icon: '🚿', text: 'DUCHA', message: 'DUCHA' },
+            { icon: '😴', text: 'DORMIR', message: 'DORMIR' },
+            { icon: '👕', text: 'VESTIR', message: 'VESTIR' },
+            { icon: '🚶', text: 'PASEO', message: 'PASEO' },
+            { icon: '🚗', text: 'COCHE', message: 'COCHE' },
+            { icon: '🏫', text: 'COLEGIO', message: 'COLEGIO' },
+            { icon: '🧩', text: 'TERAPIA', message: 'TERAPIA' },
+            { icon: '⏳', text: 'ESPERAR', message: 'ESPERAR' },
+            { icon: '🧼', text: 'LAVAR MANOS', message: 'LAVAR MANOS' }
         ]
     },
     emociones: {
         id: 'emociones', name: 'Emociones', icon: '😊', class: 'cat-emociones',
         items: [
-            { icon: '😊', text: 'FELIZ', message: 'ESTOY FELIZ' },
-            { icon: '😢', text: 'TRISTE', message: 'ESTOY TRISTE' },
-            { icon: '😠', text: 'ENFADO', message: 'ESTOY ENFADADO' },
-            { icon: '😰', text: 'CANSADO', message: 'ESTOY CANSADO' },
-            { icon: '😨', text: 'MIEDO', message: 'TENGO MIEDO' },
-            { icon: '🥰', text: 'AMOR', message: 'TE QUIERO' }
+            { icon: '😊', text: 'FELIZ', message: 'FELIZ' },
+            { icon: '😢', text: 'TRISTE', message: 'TRISTE' },
+            { icon: '😠', text: 'ENFADO', message: 'ENFADO' },
+            { icon: '😰', text: 'CANSADO', message: 'CANSADO' },
+            { icon: '😨', text: 'MIEDO', message: 'MIEDO' },
+            { icon: '🥰', text: 'AMOR', message: 'AMOR' },
+            { icon: '😌', text: 'TRANQUILO', message: 'TRANQUILO' },
+            { icon: '😬', text: 'NERVIOSO', message: 'NERVIOSO' },
+            { icon: '😤', text: 'FRUSTRADO', message: 'FRUSTRADO' },
+            { icon: '🥱', text: 'ABURRIDO', message: 'ABURRIDO' },
+            { icon: '😲', text: 'SORPRENDIDO', message: 'SORPRENDIDO' },
+            { icon: '😳', text: 'VERGÜENZA', message: 'VERGÜENZA' }
         ]
     },
     actividades: {
         id: 'actividades', name: 'Actividades', icon: '🎮', class: 'cat-actividades',
         items: [
-            { icon: '🎮', text: 'JUGAR', message: 'QUIERO JUGAR' },
-            { icon: '📺', text: 'TELE', message: 'QUIERO VER LA TELE' },
-            { icon: '📚', text: 'LIBRO', message: 'QUIERO LEER UN LIBRO' },
-            { icon: '⚽', text: 'PELOTA', message: 'QUIERO LA PELOTA' },
-            { icon: '🎨', text: 'PINTAR', message: 'QUIERO PINTAR' },
-            { icon: '🎵', text: 'MÚSICA', message: 'QUIERO ESCUCHAR MÚSICA' }
+            { icon: '🎮', text: 'JUGAR', message: 'JUGAR' },
+            { icon: '📺', text: 'TELE', message: 'TELE' },
+            { icon: '📚', text: 'LIBRO', message: 'LIBRO' },
+            { icon: '⚽', text: 'PELOTA', message: 'PELOTA' },
+            { icon: '🎨', text: 'PINTAR', message: 'PINTAR' },
+            { icon: '🎵', text: 'MÚSICA', message: 'MÚSICA' },
+            { icon: '📱', text: 'TABLET', message: 'TABLET' },
+            { icon: '🧩', text: 'PUZLE', message: 'PUZLE' },
+            { icon: '🏞️', text: 'PARQUE', message: 'PARQUE' },
+            { icon: '🏃', text: 'CORRER', message: 'CORRER' },
+            { icon: '🏗️', text: 'BLOQUES', message: 'BLOQUES' }
         ]
     },
     confort: {
         id: 'confort', name: 'Confort', icon: '🧸', class: 'cat-confort',
         items: [
-            { icon: '🤗', text: 'ABRAZO', message: 'QUIERO UN ABRAZO' },
-            { icon: '🛏️', text: 'MANTA', message: 'QUIERO LA MANTA' },
-            { icon: '🧸', text: 'OSITO', message: 'QUIERO MI PELUCHE' },
-            { icon: '🍼', text: 'CHUPETE', message: 'QUIERO EL CHUPETE' },
-            { icon: '👪', text: 'FAMILIA', message: 'QUIERO A MI FAMILIA' },
-            { icon: '🏠', text: 'CASA', message: 'QUIERO IR A CASA' }
+            { icon: '🤗', text: 'ABRAZO', message: 'ABRAZO' },
+            { icon: '🛏️', text: 'MANTA', message: 'MANTA' },
+            { icon: '🧸', text: 'PELUCHE', message: 'PELUCHE' },
+            { icon: '🍼', text: 'CHUPETE', message: 'CHUPETE' },
+            { icon: '👪', text: 'FAMILIA', message: 'FAMILIA' },
+            { icon: '🏠', text: 'CASA', message: 'CASA' },
+            { icon: '🛋️', text: 'SOFÁ', message: 'SOFÁ' },
+            { icon: '🎧', text: 'CASCOS', message: 'CASCOS' },
+            { icon: '🦷', text: 'MORDEDOR', message: 'MORDEDOR' },
+            { icon: '🧘', text: 'TRANQUILIDAD', message: 'TRANQUILIDAD' },
+            { icon: '🫧', text: 'BURBUJAS', message: 'BURBUJAS' },
+            { icon: '🪀', text: 'BALANCEO', message: 'BALANCEO' }
         ]
     },
     dolor: {
         id: 'dolor', name: 'Dolor', icon: '🏥', class: 'cat-dolor',
         items: [
-            { icon: '🤕', text: 'CABEZA', message: 'ME DUELE LA CABEZA' },
-            { icon: '🤢', text: 'BARRIGA', message: 'ME DUELE LA BARRIGA' },
-            { icon: '🦵', text: 'PIERNA', message: 'ME DUELE LA PIERNA' },
-            { icon: '💪', text: 'BRAZO', message: 'ME DUELE EL BRAZO' },
-            { icon: '👂', text: 'OÍDO', message: 'ME DUELE EL OÍDO' },
-            { icon: '⚠️', text: 'MAL', message: 'ME ENCUENTRO MAL' }
+            { icon: '🤕', text: 'CABEZA', message: 'CABEZA' },
+            { icon: '🤢', text: 'BARRIGA', message: 'BARRIGA' },
+            { icon: '🦵', text: 'PIERNA', message: 'PIERNA' },
+            { icon: '💪', text: 'BRAZO', message: 'BRAZO' },
+            { icon: '👂', text: 'OÍDO', message: 'OÍDO' },
+            { icon: '⚠️', text: 'MAL', message: 'MAL' },
+            { icon: '🦷', text: 'DIENTE', message: 'DIENTE' },
+            { icon: '🧣', text: 'GARGANTA', message: 'GARGANTA' },
+            { icon: '🩹', text: 'HERIDA', message: 'HERIDA' },
+            { icon: '🐜', text: 'PICOR', message: 'PICOR' },
+            { icon: '💥', text: 'GOLPE', message: 'GOLPE' }
         ]
     },
     comida: {
         id: 'comida', name: 'Comida', icon: '🍎', class: 'cat-comida',
         items: [
-            { icon: '🍎', text: 'FRUTA', message: 'QUIERO FRUTA' },
-            { icon: '🍪', text: 'GALLETA', message: 'QUIERO GALLETAS' },
-            { icon: '🧃', text: 'ZUMO', message: 'QUIERO ZUMO' },
-            { icon: '🥛', text: 'LECHE', message: 'QUIERO LECHE' },
-            { icon: '🍞', text: 'PAN', message: 'QUIERO PAN' },
-            { icon: '🍲', text: 'COMIDA', message: 'QUIERO COMIDA CALIENTE' }
+            { icon: '🍎', text: 'FRUTA', message: 'FRUTA' },
+            { icon: '🍪', text: 'GALLETA', message: 'GALLETA' },
+            { icon: '🧃', text: 'ZUMO', message: 'ZUMO' },
+            { icon: '🥛', text: 'LECHE', message: 'LECHE' },
+            { icon: '🍞', text: 'PAN', message: 'PAN' },
+            { icon: '🍲', text: 'CALIENTE', message: 'CALIENTE' },
+            { icon: '🍝', text: 'PASTA', message: 'PASTA' },
+            { icon: '🍗', text: 'CARNE', message: 'CARNE' },
+            { icon: '🍟', text: 'PATATAS', message: 'PATATAS' },
+            { icon: '🥣', text: 'YOGUR', message: 'YOGUR' },
+            { icon: '🍫', text: 'CHOCOLATE', message: 'CHOCOLATE' }
         ]
     },
     sensaciones: {
         id: 'sensaciones', name: 'Sensaciones', icon: '❄️', class: 'cat-sensaciones',
         items: [
-            { icon: '🥶', text: 'FRÍO', message: 'TENGO MUCHO FRÍO' },
-            { icon: '🥵', text: 'CALOR', message: 'TENGO MUCHO CALOR' },
-            { icon: '💦', text: 'SUDOR', message: 'ESTOY SUDANDO' },
-            { icon: '🤧', text: 'MOCO', message: 'NECESITO SONARME' },
-            { icon: '😵', text: 'MAREO', message: 'ESTOY MAREADO' },
-            { icon: '🤒', text: 'FIEBRE', message: 'TENGO FIEBRE' }
+            { icon: '🥶', text: 'FRÍO', message: 'FRÍO' },
+            { icon: '🥵', text: 'CALOR', message: 'CALOR' },
+            { icon: '💦', text: 'SUDOR', message: 'SUDOR' },
+            { icon: '🤧', text: 'MOCO', message: 'MOCO' },
+            { icon: '😵', text: 'MAREO', message: 'MAREO' },
+            { icon: '🤒', text: 'FIEBRE', message: 'FIEBRE' },
+            { icon: '🔊', text: 'RUIDO', message: 'RUIDO' },
+            { icon: '💡', text: 'LUZ FUERTE', message: 'LUZ FUERTE' },
+            { icon: '👕', text: 'APRIETA', message: 'APRIETA' },
+            { icon: '💩', text: 'SUCIO', message: 'SUCIO' },
+            { icon: '💧', text: 'MOJADO', message: 'MOJADO' }
         ]
     }
 };

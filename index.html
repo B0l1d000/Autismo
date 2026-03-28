@@ -6,12 +6,25 @@
     <!-- Meta Theme Color matches light mode by default, will be updated via JS -->
     <meta name="theme-color" content="#F9F9F4" id="meta-theme-color">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="description" content="Comunicador Infantil Avanzado para niños y niñas con Autismo Severo">
     
     <title>Comunicador Accesible</title>
     
+    <link rel="manifest" href="manifest.json">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Register Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('Service Worker registrado', reg))
+            .catch(err => console.error('Error Service Worker', err));
+        });
+      }
+    </script>
 </head>
 <body>
     <header class="main-header">
