@@ -239,6 +239,7 @@ body, html {
     flex-direction: column;
     align-items: center;
     padding-bottom: 120px; /* Space for footer */
+    touch-action: pan-y; /* Permite scroll vertical, previniendo cancelación del touch horizontal */
 }
 
 .grid {
@@ -273,6 +274,7 @@ body, html {
     user-select: none;
     /* Removed bounce animations for Motor Planning completely */
     transition: filter 0.1s;
+    touch-action: pan-y;
 }
 
 .card:active {

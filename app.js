@@ -260,30 +260,48 @@ function setupEventListeners() {
  */
 let touchStartX = 0;
 let touchEndX = 0;
+let touchStartY = 0;
+let touchEndY = 0;
 
 function setupSwipeListeners() {
     const swipeArea = DOM.gridContainer.parentElement || DOM.gridContainer;
-    
+
     swipeArea.addEventListener('touchstart', e => {
-        touchStartX = e.changedTouches[0].screenX;
-    }, {passive: true});
+        touchStartX = e.changedTouches[0].clientX;
+        touchStartY = e.changedTouches[0].clientY;
+    }, { passive: true });
 
     swipeArea.addEventListener('touchend', e => {
-        touchEndX = e.changedTouches[0].screenX;
+        touchEndX = e.changedTouches[0].clientX;
+        touchEndY = e.changedTouches[0].clientY;
         handleSwipe();
-    }, {passive: true});
+    }, { passive: true });
+
+    // En móviles a menudo se cancela el evento táctil antes de terminar (por ej. si cruzan mucho el borde)
+    swipeArea.addEventListener('touchcancel', e => {
+        touchEndX = e.changedTouches[0].clientX;
+        touchEndY = e.changedTouches[0].clientY;
+        handleSwipe();
+    }, { passive: true });
 }
 
 function handleSwipe() {
     const swipeThreshold = 50;
-    const swipeDistance = touchStartX - touchEndX;
-    
-    // Ignore small swipes or taps
-    if (Math.abs(swipeDistance) > swipeThreshold) {
+    const swipeDistanceX = touchStartX - touchEndX;
+    const swipeDistanceY = touchStartY - touchEndY;
+
+    // Si el usuario intentaba hacer scroll vertical (hacia abajo o hacia arriba), 
+    // ignoramos el evento de swipe horizontal para no cambiar de pestaña accidentalmente.
+    if (Math.abs(swipeDistanceY) > Math.abs(swipeDistanceX)) {
+        return;
+    }
+
+    // Ignorar pequeños desplazamientos
+    if (Math.abs(swipeDistanceX) > swipeThreshold) {
         const categoryKeys = Object.keys(categories);
         const currentIndex = categoryKeys.indexOf(state.activeCategory);
-        
-        if (swipeDistance > 0) {
+
+        if (swipeDistanceX > 0) {
             // Swiped left -> next category
             if (currentIndex < categoryKeys.length - 1) {
                 changeCategory(categoryKeys[currentIndex + 1]);
