@@ -9,23 +9,13 @@
     --light-border: #E0E0DB;
     --light-header-bg: #EAEAE4;
     
-    --light-core: #FFF9C4;
-    --light-blue: #E3F2FD;
-    --light-purple: #F3E5F5;
-    --light-green: #E8F5E9;
-    --light-orange: #FFF3E0;
-    --light-red: #FFEBEE;
-    --light-yellow: #FFF8E1;
-    --light-gray: #ECEFF1;
-    
-    --light-core-border: #FFF59D;
-    --light-blue-border: #90CAF9;
-    --light-purple-border: #CE93D8;
-    --light-green-border: #A5D6A7;
-    --light-orange-border: #FFCC80;
-    --light-red-border: #EF9A9A;
-    --light-yellow-border: #FFE082;
-    --light-gray-border: #B0BEC5;
+    /* Fitzgerald Key Light Mode */
+    --c-yellow: #FFF59D; --c-yellow-border: #FBC02D;
+    --c-green: #C8E6C9; --c-green-border: #4CAF50;
+    --c-blue: #BBDEFB; --c-blue-border: #2196F3;
+    --c-orange: #FFE0B2; --c-orange-border: #FF9800;
+    --c-pink: #F8BBD0; --c-pink-border: #E91E63;
+    --c-white: #FFFFFF; --c-white-border: #B0BEC5;
 
     /* DARK THEME (Soothing dark mode) */
     --dark-bg: #121212;
@@ -33,24 +23,6 @@
     --dark-text: #E0E0E0;
     --dark-border: #333333;
     --dark-header-bg: #000000;
-    
-    --dark-core: #FBC02D;
-    --dark-blue: #0D47A1;
-    --dark-purple: #4A148C;
-    --dark-green: #1B5E20;
-    --dark-orange: #E65100;
-    --dark-red: #B71C1C;
-    --dark-yellow: #F57F17;
-    --dark-gray: #37474F;
-    
-    --dark-core-border: #F9A825;
-    --dark-blue-border: #1565C0;
-    --dark-purple-border: #6A1B9A;
-    --dark-green-border: #2E7D32;
-    --dark-orange-border: #EF6C00;
-    --dark-red-border: #C62828;
-    --dark-yellow-border: #F9A825;
-    --dark-gray-border: #455A64;
 }
 
 [data-theme="light"] {
@@ -59,24 +31,6 @@
     --text-color: var(--light-text);
     --border-color: var(--light-border);
     --header-bg: var(--light-header-bg);
-    
-    --cat-nucleo: var(--light-core);
-    --cat-basicos: var(--light-blue);
-    --cat-emociones: var(--light-purple);
-    --cat-actividades: var(--light-green);
-    --cat-confort: var(--light-orange);
-    --cat-dolor: var(--light-red);
-    --cat-comida: var(--light-yellow);
-    --cat-sensaciones: var(--light-gray);
-
-    --cat-nucleo-border: var(--light-core-border);
-    --cat-basicos-border: var(--light-blue-border);
-    --cat-emociones-border: var(--light-purple-border);
-    --cat-actividades-border: var(--light-green-border);
-    --cat-confort-border: var(--light-orange-border);
-    --cat-dolor-border: var(--light-red-border);
-    --cat-comida-border: var(--light-yellow-border);
-    --cat-sensaciones-border: var(--light-gray-border);
 }
 
 [data-theme="dark"] {
@@ -85,24 +39,6 @@
     --text-color: var(--dark-text);
     --border-color: var(--dark-border);
     --header-bg: var(--dark-header-bg);
-    
-    --cat-nucleo: var(--dark-core);
-    --cat-basicos: var(--dark-blue);
-    --cat-emociones: var(--dark-purple);
-    --cat-actividades: var(--dark-green);
-    --cat-confort: var(--dark-orange);
-    --cat-dolor: var(--dark-red);
-    --cat-comida: var(--dark-yellow);
-    --cat-sensaciones: var(--dark-gray);
-
-    --cat-nucleo-border: var(--dark-core-border);
-    --cat-basicos-border: var(--dark-blue-border);
-    --cat-emociones-border: var(--dark-purple-border);
-    --cat-actividades-border: var(--dark-green-border);
-    --cat-confort-border: var(--dark-orange-border);
-    --cat-dolor-border: var(--dark-red-border);
-    --cat-comida-border: var(--dark-yellow-border);
-    --cat-sensaciones-border: var(--dark-gray-border);
 }
 
 * {
@@ -307,8 +243,10 @@ body, html {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    /* Fixed grid for Motor Planning: 4 columns for mobile, scales up */
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 12px;
     width: 100%;
     max-width: 900px;
 }
@@ -316,42 +254,39 @@ body, html {
 /* For tablets and larger phones */
 @media (min-width: 600px) {
     .grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px;
     }
 }
 
 .card {
     background-color: var(--surface-color);
-    border: 4px solid var(--border-color);
-    border-radius: 24px;
+    border: 3px solid var(--border-color);
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 10px;
+    padding: 10px 5px;
     cursor: pointer;
-    min-height: 160px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
-    transition: transform 0.15s ease, filter 0.15s, box-shadow 0.2s;
+    min-height: 110px;
     user-select: none;
+    /* Removed bounce animations for Motor Planning completely */
+    transition: filter 0.1s;
 }
 
 .card:active {
-    transform: scale(0.93) translateY(4px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    filter: brightness(0.95);
+    filter: brightness(0.85);
 }
 
 .card-icon {
-    font-size: 4.5rem;
-    margin-bottom: 15px;
+    font-size: 3rem;
+    margin-bottom: 8px;
     line-height: 1;
-    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.1 5));
 }
 
 .card-text {
-    font-size: 1.2rem;
+    font-size: 0.95rem;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
@@ -359,15 +294,14 @@ body, html {
     word-break: break-word;
 }
 
-/* Color thematic classes for cards */
-.cat-nucleo { background-color: var(--cat-nucleo); border-color: var(--cat-nucleo-border); }
-.cat-basicos { background-color: var(--cat-basicos); border-color: var(--cat-basicos-border); }
-.cat-emociones { background-color: var(--cat-emociones); border-color: var(--cat-emociones-border); }
-.cat-actividades { background-color: var(--cat-actividades); border-color: var(--cat-actividades-border); }
-.cat-confort { background-color: var(--cat-confort); border-color: var(--cat-confort-border); }
-.cat-dolor { background-color: var(--cat-dolor); border-color: var(--cat-dolor-border); }
-.cat-comida { background-color: var(--cat-comida); border-color: var(--cat-comida-border); }
-.cat-sensaciones { background-color: var(--cat-sensaciones); border-color: var(--cat-sensaciones-border); }
+/* Fitzgerald Color Classes */
+.fitz-yellow { background-color: var(--c-yellow); border-color: var(--c-yellow-border); color: #000; }
+.fitz-green { background-color: var(--c-green); border-color: var(--c-green-border); color: #000; }
+.fitz-blue { background-color: var(--c-blue); border-color: var(--c-blue-border); color: #000; }
+.fitz-orange { background-color: var(--c-orange); border-color: var(--c-orange-border); color: #000; }
+.fitz-pink { background-color: var(--c-pink); border-color: var(--c-pink-border); color: #000; }
+.fitz-white { background-color: var(--c-white); border-color: var(--c-white-border); color: var(--text-color); }
+
 
 
 /** 
