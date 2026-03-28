@@ -262,10 +262,12 @@ let touchStartX = 0;
 let touchEndX = 0;
 let touchStartY = 0;
 let touchEndY = 0;
+let isMouseDown = false;
 
 function setupSwipeListeners() {
     const swipeArea = DOM.gridContainer.parentElement || DOM.gridContainer;
 
+    // ----- EVENTOS TÁCTILES (MÓVILES) -----
     swipeArea.addEventListener('touchstart', e => {
         touchStartX = e.changedTouches[0].clientX;
         touchStartY = e.changedTouches[0].clientY;
@@ -277,22 +279,48 @@ function setupSwipeListeners() {
         handleSwipe();
     }, { passive: true });
 
-    // En móviles a menudo se cancela el evento táctil antes de terminar (por ej. si cruzan mucho el borde)
     swipeArea.addEventListener('touchcancel', e => {
         touchEndX = e.changedTouches[0].clientX;
         touchEndY = e.changedTouches[0].clientY;
         handleSwipe();
     }, { passive: true });
+
+    // ----- EVENTOS DE RATÓN (PC: BRAVE, CHROME, FIREFOX, EDGE, OPERA) -----
+    swipeArea.addEventListener('mousedown', e => {
+        isMouseDown = true;
+        touchStartX = e.clientX;
+        touchStartY = e.clientY;
+    });
+
+    swipeArea.addEventListener('mouseup', e => {
+        if (!isMouseDown) return;
+        isMouseDown = false;
+        touchEndX = e.clientX;
+        touchEndY = e.clientY;
+        handleSwipe();
+    });
+
+    swipeArea.addEventListener('mouseleave', e => {
+        if (!isMouseDown) return;
+        isMouseDown = false;
+        touchEndX = e.clientX;
+        touchEndY = e.clientY;
+        handleSwipe();
+    });
 }
 
 function handleSwipe() {
     const swipeThreshold = 50;
     const swipeDistanceX = touchStartX - touchEndX;
     const swipeDistanceY = touchStartY - touchEndY;
+    
+    // Evitar que un clic o toque al azar sin distancias genere errores
+    if (touchStartX === 0 && touchEndX === 0) return;
 
     // Si el usuario intentaba hacer scroll vertical (hacia abajo o hacia arriba), 
     // ignoramos el evento de swipe horizontal para no cambiar de pestaña accidentalmente.
     if (Math.abs(swipeDistanceY) > Math.abs(swipeDistanceX)) {
+        resetSwipeCoords();
         return;
     }
 
@@ -315,6 +343,15 @@ function handleSwipe() {
             }
         }
     }
+    
+    resetSwipeCoords();
+}
+
+function resetSwipeCoords() {
+    touchStartX = 0;
+    touchEndX = 0;
+    touchStartY = 0;
+    touchEndY = 0;
 }
 
 /**
