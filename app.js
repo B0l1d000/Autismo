@@ -251,6 +251,52 @@ function setupEventListeners() {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') closeZoom();
     });
+
+    setupSwipeListeners();
+}
+
+/**
+ * Swipe Navigation
+ */
+let touchStartX = 0;
+let touchEndX = 0;
+
+function setupSwipeListeners() {
+    const swipeArea = DOM.gridContainer.parentElement || DOM.gridContainer;
+    
+    swipeArea.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, {passive: true});
+
+    swipeArea.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, {passive: true});
+}
+
+function handleSwipe() {
+    const swipeThreshold = 50;
+    const swipeDistance = touchStartX - touchEndX;
+    
+    // Ignore small swipes or taps
+    if (Math.abs(swipeDistance) > swipeThreshold) {
+        const categoryKeys = Object.keys(categories);
+        const currentIndex = categoryKeys.indexOf(state.activeCategory);
+        
+        if (swipeDistance > 0) {
+            // Swiped left -> next category
+            if (currentIndex < categoryKeys.length - 1) {
+                changeCategory(categoryKeys[currentIndex + 1]);
+                triggerVibration(CONFIG.vibLow);
+            }
+        } else {
+            // Swiped right -> previous category
+            if (currentIndex > 0) {
+                changeCategory(categoryKeys[currentIndex - 1]);
+                triggerVibration(CONFIG.vibLow);
+            }
+        }
+    }
 }
 
 /**
