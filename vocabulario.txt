@@ -1,0 +1,145 @@
+Categoria,Palabra_Frase,Tipo,Icono_Visual,URL_Pictograma
+Núcleo,Yo,Pronombre,🧍,PENDIENTE
+Núcleo,Tú,Pronombre,👉,PENDIENTE
+Núcleo,Él / Ella,Pronombre,👤,PENDIENTE
+Núcleo,Nosotros,Pronombre,🫂,PENDIENTE
+Núcleo,Quiero,Verbo,🤲,PENDIENTE
+Núcleo,No quiero,Verbo/Negación,🙅,PENDIENTE
+Núcleo,Más,Adverbio,➕,PENDIENTE
+Núcleo,Se acabó / Fin,Expresión,🛑,PENDIENTE
+Núcleo,Ayuda,Verbo,🤝,PENDIENTE
+Núcleo,Ir,Verbo,➡️,PENDIENTE
+Núcleo,Parar,Verbo,✋,PENDIENTE
+Núcleo,Gustar,Verbo,👍,PENDIENTE
+Núcleo,No gustar,Verbo,👎,PENDIENTE
+Núcleo,Poner,Verbo,📥,PENDIENTE
+Núcleo,Quitar,Verbo,📤,PENDIENTE
+Núcleo,Dar,Verbo,🫴,PENDIENTE
+Núcleo,Tomar / Coger,Verbo,✊,PENDIENTE
+Núcleo,Abrir,Verbo,👐,PENDIENTE
+Núcleo,Cerrar,Verbo,🤏,PENDIENTE
+Núcleo,Aquí,Ubicación,👇,PENDIENTE
+Núcleo,Allí,Ubicación,👆,PENDIENTE
+Núcleo,Ahora,Tiempo,⏱️,PENDIENTE
+Núcleo,Después,Tiempo,⏳,PENDIENTE
+Núcleo,Qué,Pregunta,❓,PENDIENTE
+Básicos,Sí,Afirmación,✅,PENDIENTE
+Básicos,No,Negación,❌,PENDIENTE
+Básicos,Hola,Saludo,👋,PENDIENTE
+Básicos,Adiós,Despedida,👋,PENDIENTE
+Básicos,Por favor,Cortesía,🙏,PENDIENTE
+Básicos,Gracias,Cortesía,🫂,PENDIENTE
+Básicos,Perdón,Cortesía,🙇,PENDIENTE
+Básicos,¿Cómo estás?,Interacción,💬,PENDIENTE
+Básicos,Bien,Estado,👍,PENDIENTE
+Básicos,Mal,Estado,👎,PENDIENTE
+Básicos,Baño / Retrete,Necesidad,🚽,PENDIENTE
+Básicos,Dormir,Necesidad,🛌,PENDIENTE
+Básicos,Lavarse,Rutina,🧼,PENDIENTE
+Básicos,Vestirse,Rutina,👕,PENDIENTE
+Básicos,Esperar,Rutina,✋,PENDIENTE
+Básicos,Mi turno,Interacción,🎲,PENDIENTE
+Básicos,No sé,Expresión,🤷,PENDIENTE
+Emociones,Feliz,Emoción,😀,PENDIENTE
+Emociones,Triste,Emoción,😢,PENDIENTE
+Emociones,Enfadado,Emoción,😠,PENDIENTE
+Emociones,Asustado,Emoción,😨,PENDIENTE
+Emociones,Cansado,Emoción,🥱,PENDIENTE
+Emociones,Aburrido,Emoción,😐,PENDIENTE
+Emociones,Emocionado,Emoción,🤩,PENDIENTE
+Emociones,Frustrado,Emoción,😖,PENDIENTE
+Emociones,Tranquilo,Emoción,😌,PENDIENTE
+Emociones,Nervioso,Emoción,😬,PENDIENTE
+Emociones,Sorprendido,Emoción,😲,PENDIENTE
+Emociones,Enfermo,Emoción,🤒,PENDIENTE
+Emociones,Orgulloso,Emoción,😎,PENDIENTE
+Emociones,Confundido,Emoción,😕,PENDIENTE
+Actividades,Jugar,Acción,🧩,PENDIENTE
+Actividades,Ver la tele,Acción,📺,PENDIENTE
+Actividades,Música,Acción,🎧,PENDIENTE
+Actividades,Dibujar,Acción,🖍️,PENDIENTE
+Actividades,Pintar,Acción,🎨,PENDIENTE
+Actividades,Pasear,Acción,🚶,PENDIENTE
+Actividades,Tablet / Móvil,Acción,📱,PENDIENTE
+Actividades,Leer,Acción,📖,PENDIENTE
+Actividades,Parque,Lugar,🛝,PENDIENTE
+Actividades,Puzle,Acción,🧩,PENDIENTE
+Actividades,Bailar,Acción,💃,PENDIENTE
+Actividades,Cantar,Acción,🎤,PENDIENTE
+Actividades,Correr,Acción,🏃,PENDIENTE
+Actividades,Saltar,Acción,🦘,PENDIENTE
+Actividades,Nadar,Acción,🏊,PENDIENTE
+Actividades,Ordenador,Acción,💻,PENDIENTE
+Actividades,Pelota,Objeto,⚽,PENDIENTE
+Actividades,Coches,Objeto,🚗,PENDIENTE
+Actividades,Bloques,Objeto,🧱,PENDIENTE
+Confort,Abrazo,Regulación,🫂,PENDIENTE
+Confort,Manta,Regulación,🪔,PENDIENTE
+Confort,Mi juguete,Regulación,🧸,PENDIENTE
+Confort,Silencio,Regulación,🤫,PENDIENTE
+Confort,Estar solo,Regulación,🚪,PENDIENTE
+Confort,Mecerse,Regulación,🪑,PENDIENTE
+Confort,Luz suave,Regulación,💡,PENDIENTE
+Confort,Oscuridad,Regulación,🌑,PENDIENTE
+Confort,Mordedor,Regulación,🦷,PENDIENTE
+Confort,Cascos antirruido,Regulación,🎧,PENDIENTE
+Confort,Respirar,Regulación,😮‍💨,PENDIENTE
+Confort,Masaje,Regulación,💆,PENDIENTE
+Confort,Presión / Peso,Regulación,🏋️,PENDIENTE
+Confort,Música relajante,Regulación,🎶,PENDIENTE
+Dolor,Me duele,Expresión general,🩹,PENDIENTE
+Dolor,Cabeza,Parte del cuerpo,🤕,PENDIENTE
+Dolor,Barriga,Parte del cuerpo,🤢,PENDIENTE
+Dolor,Dientes / Muelas,Parte del cuerpo,🦷,PENDIENTE
+Dolor,Garganta,Parte del cuerpo,🧣,PENDIENTE
+Dolor,Oído,Parte del cuerpo,👂,PENDIENTE
+Dolor,Brazo,Parte del cuerpo,💪,PENDIENTE
+Dolor,Pierna,Parte del cuerpo,🦵,PENDIENTE
+Dolor,Mano,Parte del cuerpo,🖐️,PENDIENTE
+Dolor,Pie,Parte del cuerpo,🦶,PENDIENTE
+Dolor,Ojo,Parte del cuerpo,👁️,PENDIENTE
+Dolor,Espalda,Parte del cuerpo,🧍,PENDIENTE
+Dolor,Mareado,Sensación física,😵‍💫,PENDIENTE
+Dolor,Corte / Herida,Lesión,🩸,PENDIENTE
+Dolor,Golpe,Lesión,💥,PENDIENTE
+Dolor,Medicina,Tratamiento,💊,PENDIENTE
+Comida,Tengo hambre,Expresión,🍽️,PENDIENTE
+Comida,Tengo sed,Expresión,🚰,PENDIENTE
+Comida,Agua,Bebida,💧,PENDIENTE
+Comida,Zumo,Bebida,🧃,PENDIENTE
+Comida,Leche,Bebida,🥛,PENDIENTE
+Comida,Pan,Alimento,🥖,PENDIENTE
+Comida,Fruta,Alimento,🍎,PENDIENTE
+Comida,Manzana,Alimento,🍏,PENDIENTE
+Comida,Plátano,Alimento,🍌,PENDIENTE
+Comida,Galletas,Alimento,🍪,PENDIENTE
+Comida,Desayuno,Comida del día,🥣,PENDIENTE
+Comida,Comer / Almuerzo,Comida del día,🍛,PENDIENTE
+Comida,Cenar,Comida del día,🍲,PENDIENTE
+Comida,Carne,Alimento,🥩,PENDIENTE
+Comida,Pescado,Alimento,🐟,PENDIENTE
+Comida,Pasta,Alimento,🍝,PENDIENTE
+Comida,Arroz,Alimento,🍚,PENDIENTE
+Comida,Verdura,Alimento,🥦,PENDIENTE
+Comida,Patatas,Alimento,🍟,PENDIENTE
+Comida,Queso,Alimento,🧀,PENDIENTE
+Comida,Yogur,Alimento,🥄,PENDIENTE
+Comida,Helado,Alimento,🍦,PENDIENTE
+Comida,Bocadillo,Alimento,🥪,PENDIENTE
+Sensaciones,Tengo frío,Sensación,🥶,PENDIENTE
+Sensaciones,Tengo calor,Sensación,🥵,PENDIENTE
+Sensaciones,Ruido fuerte,Sensación,🔊,PENDIENTE
+Sensaciones,Mucha luz,Sensación,☀️,PENDIENTE
+Sensaciones,Pica,Sensación,🦟,PENDIENTE
+Sensaciones,Me aprieta,Sensación,🗜️,PENDIENTE
+Sensaciones,Mojado,Sensación,💦,PENDIENTE
+Sensaciones,Huele mal,Sensación,🦨,PENDIENTE
+Sensaciones,Huele bien,Sensación,🌸,PENDIENTE
+Sensaciones,Suave,Sensación,🪶,PENDIENTE
+Sensaciones,Áspero,Sensación,🌵,PENDIENTE
+Sensaciones,Duro,Sensación,🪨,PENDIENTE
+Sensaciones,Pegajoso,Sensación,🍯,PENDIENTE
+Sensaciones,Sabe mal,Sensación,👅,PENDIENTE
+Sensaciones,Sabe bien,Sensación,😋,PENDIENTE
+Sensaciones,Sucio,Sensación,💩,PENDIENTE
+Sensaciones,Limpio,Sensación,✨,PENDIENTE

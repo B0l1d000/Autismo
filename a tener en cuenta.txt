@@ -1,0 +1,35 @@
+1. Planificación Motora (El principio más importante)
+Imagina escribir en el teclado de tu ordenador o móvil: no miras las teclas porque tus dedos ya saben dónde están. En la CAA esto se llama planificación motora.
+
+La regla: Un botón nunca debe cambiar de sitio. Si en la sección "Comida", la "Manzana" está en la fila 2, columna 3, debe quedarse ahí para siempre.
+
+El error común: Muchas apps centran los botones automáticamente si hay pocos, o los reordenan alfabéticamente. Si añades un botón nuevo y los demás se desplazan, el usuario tiene que volver a aprender dónde está todo, lo que genera muchísima frustración.
+
+2. Tamaño de la cuadrícula (Grid) y la técnica de "Ocultar"
+En lugar de hacer botones gigantes al principio y luego hacerlos pequeños cuando añadas más vocabulario, elige una cuadrícula fija desde el día 1.
+
+La regla: Define un tamaño de cuadrícula máximo (por ejemplo, 4 columnas x 5 filas para empezar, o 6x8 si la tablet es grande).
+
+Técnica de Ocultar (Masking): Si el usuario aún no está listo para ver 20 botones de golpe porque se abruma (sobrecarga sensorial), no hagas la cuadrícula más pequeña. Mantén la cuadrícula grande, pero oculta (vuelve invisibles o grises) los botones que no usa, dejando solo 4 o 5 visibles. Conforme aprenda, vas "desocultando" botones en sus posiciones definitivas.
+
+3. El Código de Colores (Clave Fitzgerald)
+Para facilitar que el cerebro procese el lenguaje rápidamente y forme frases, las apps profesionales colorean el fondo o el borde de los botones según el tipo de palabra. Este es el estándar internacional (Clave Fitzgerald modificada):
+
+🟨 Amarillo: Personas y Pronombres (Yo, Tú, Mamá).
+
+🟩 Verde: Verbos / Acciones (Quiero, Ir, Jugar, Parar).
+
+🟦 Azul: Adjetivos / Descripciones / Emociones (Feliz, Triste, Grande, Frío).
+
+🟧 Naranja: Sustantivos (Cosas, Comida, Lugares).
+
+🩷 Rosa / Morado: Palabras sociales (Hola, Adiós, Por favor, Gracias).
+
+⬜ Blanco: Palabras misceláneas o de navegación.
+
+4. Diseño Visual y Espaciado
+Sin animaciones: Evita que los botones reboten o haya transiciones llamativas al cambiar de pantalla. Los cambios deben ser instantáneos.
+
+Espacio en blanco: Deja una pequeña separación (margen/padding) clara entre botón y botón para evitar "toques accidentales" si el usuario tiene dificultades de motricidad fina.
+
+Texto: El texto debe ir siempre debajo del pictograma/imagen, en una fuente muy limpia (tipo Arial, Roboto o Poppins), sin florituras.
