@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Meta Theme Color matches light mode by default, will be updated via JS -->
+    <meta name="theme-color" content="#F9F9F4" id="meta-theme-color">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="Comunicador Infantil Avanzado para niños y niñas con Autismo Severo">
+    
+    <title>Comunicador Accesible</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>🗣️ Comunicador</h1>
+            <button id="theme-toggle" class="icon-button" aria-label="Cambiar tema oscuro/claro" title="Cambiar Tema">
+                <span class="icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sentence Builder (Fraseador) -->
+    <section class="sentence-builder" aria-label="Constructor de frases">
+        <div class="sentence-strip" id="sentence-strip" aria-live="polite">
+            <!-- Words will appear here -->
+        </div>
+        <div class="sentence-controls">
+            <button class="ctrl-btn delete-btn" id="delete-btn" aria-label="Borrar última palabra" title="Borrar último">⌫</button>
+            <button class="ctrl-btn clear-btn" id="clear-btn" aria-label="Borrar frase completa" title="Borrar todo">❌</button>
+            <button class="ctrl-btn speak-btn" id="speak-sentence-btn" aria-label="Hablar la frase" title="Hablar">🗣️ HABLAR</button>
+        </div>
+    </section>
+    
+    <nav class="category-nav" aria-label="Categorías">
+        <!-- Tabs appended by JS -->
+        <div class="tabs" id="tabs-container"></div>
+    </nav>
+    
+    <main class="main-content">
+        <!-- Communication cards appended by JS -->
+        <div id="grid-container" class="grid"></div>
+    </main>
+    
+    <footer class="main-footer">
+        <button id="emergency-btn" class="emergency-button" aria-label="Emergencia: Mamá ven ya. Tocar 3 veces rápido.">
+            <span class="emergency-title">🚨 MAMÁ VEN YA</span>
+        </button>
+    </footer>
+    
+    <!-- Fullscreen zoom modal for clear visual and auditory feedback -->
+    <div id="zoom-modal" class="zoom-modal hidden" aria-hidden="true">
+        <div class="zoom-content">
+            <div class="zoom-icon" id="zoom-icon"></div>
+            <h2 id="zoom-text" class="zoom-text"></h2>
+            <p class="zoom-instruction">Toca en cualquier parte para cerrar</p>
+        </div>
+    </div>
+    
+    <!-- Temporary flash toast for minor feedback -->
+    <div id="toast" class="toast" role="alert" aria-live="assertive"></div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
